@@ -9,5 +9,5 @@ ReactDOM.render(
 	<StateProvider initialState={initialState} reducer={reducer}>
 		<App />
 	</StateProvider>,
-	document.getElementById('digital-energy-app')
+	document.getElementById('react-app')
 );
