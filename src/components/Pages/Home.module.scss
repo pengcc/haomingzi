@@ -1,0 +1,90 @@
+ @import '~Styles/base';
+
+$namespace: 'pageHome';
+
+.#{$namespace} {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    overflow: auto;
+
+    .content {
+      width: 100%;
+      height: 100%;
+      height: -webkit-fill-available;
+      height: -moz-available;
+	  display: flex;
+	  flex-direction: column;
+      padding: 20px;
+	  align-items: center;
+	  justify-content: start;
+
+	  @include font(F14-n);
+	}
+
+	.optionBlock {
+		width: 100%;
+
+		.chosenName {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-around;
+
+			margin-bottom: 15px;
+
+			.chineseNameField,
+			.pinyinField {
+				min-width: 120px;
+				width: fit-content;
+				max-width: 45%;
+				@include font(F14-b);
+
+				label {
+					display: inline-block;
+					width: fit-content;
+					padding-right: 2px;
+				}
+
+				input {
+					width: 100px;
+					border: none;
+  					border-bottom: 1px solid;
+				}
+			}
+
+		}
+	}
+	.typeList,
+	.nameList {
+		width: 100%;
+	}
+
+	.typeList {
+		height: 300px;
+		margin-bottom: 30px;
+	}
+
+	.nameList {
+		.list {
+			@include apply-from(tablet){
+				@include font(F18-n);
+			}
+		}
+
+		.nameBlock {
+			width: fit-content;
+			padding: 2px 5px;
+			text-align: left;
+			display: inline-block;
+
+			@include apply-from(tablet){
+				min-width: 200px;
+			}
+		}
+	}
+}

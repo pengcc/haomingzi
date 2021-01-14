@@ -1,0 +1,7 @@
+@import '~Styles/base';
+
+$namespace: 'checkboxList';
+
+.#{$namespace} {
+	@include font(F12-b);
+}
