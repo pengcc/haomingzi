@@ -1,1 +1,1 @@
-rsync -av --progress wwwroot/dist/. public
+rsync -av --progress wwwroot/dist/. ./
